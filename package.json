@@ -1,0 +1,16 @@
+{
+  "name": "digichef-chef-lisa-standalone",
+  "version": "1.0.0",
+  "description": "## Purpose: This zip provides a fully working single-chef DigiChef storefront for Chef Lisa. It includes SEO tags, order buttons, chef profile, and verification info.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "node-fetch": "^3.3.2"
+  }
+}
