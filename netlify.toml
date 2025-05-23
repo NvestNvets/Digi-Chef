@@ -1,0 +1,23 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[dev]
+  publish = "public"
+  functions = "netlify/functions"
+  autoLaunch = true
+
+[[redirects]]
+  from = "/digichef/*"
+  to = "/digichef/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/"
+  to = "/digichef/chefstorefront.html"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/digichef/chefstorefront.html"
+  status = 200 

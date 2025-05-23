@@ -1,6 +1,11 @@
 const fetch = require('node-fetch');
 require('dotenv').config();
 
+// Log environment variables for verification
+console.log("Supabase URL:", process.env.SUPABASE_URL);
+console.log("Supabase Key:", process.env.SUPABASE_API_KEY);
+console.log("Twilio SID:", process.env.TWILIO_ACCOUNT_SID);
+
 exports.handler = async function(event, context) {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
