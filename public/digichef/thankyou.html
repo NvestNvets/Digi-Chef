@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You - Latina Guapa Bundle | DigiChef</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4 text-gray-800">
+  <main class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow">
+    <div class="text-center">
+      <h1 class="text-2xl font-bold mb-4">¡Gracias por tu orden!</h1>
+      <p class="text-gray-600 mb-6">Your Latina Guapa Bundle is being prepared with love.</p>
+    </div>
+
+    <section class="space-y-6">
+      <!-- Download Section -->
+      <div class="bg-yellow-50 p-4 rounded shadow">
+        <h2 class="font-bold text-lg mb-2">Your Bundle Downloads</h2>
+        <div class="space-y-3">
+          <a href="/digichef/recipe.pdf" class="block bg-green-600 text-white px-4 py-2 rounded text-center">
+            Download Recipe PDF
+          </a>
+          <p class="text-sm text-gray-600">Your T-shirt will arrive separately within 5-7 business days.</p>
+        </div>
+      </div>
+
+      <!-- K9 Affilia Section -->
+      <div class="bg-blue-50 p-4 rounded shadow">
+        <h2 class="font-bold text-lg mb-2">Share & Earn</h2>
+        <p class="text-sm mb-4">Share these links to earn with every bundle sale!</p>
+        <div class="space-y-2">
+          <div class="bg-white p-2 rounded">
+            <p class="text-xs text-gray-500">Sofrito Bundle Link</p>
+            <p class="text-sm font-mono break-all" id="sofritoLink">Loading...</p>
+          </div>
+          <div class="bg-white p-2 rounded">
+            <p class="text-xs text-gray-500">Recipe PDF Link</p>
+            <p class="text-sm font-mono break-all" id="recipeLink">Loading...</p>
+          </div>
+          <div class="bg-white p-2 rounded">
+            <p class="text-xs text-gray-500">T-shirt Link</p>
+            <p class="text-sm font-mono break-all" id="tshirtLink">Loading...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- K9 Iphilia Message -->
+      <div class="bg-purple-50 p-4 rounded shadow">
+        <h2 class="font-bold text-lg mb-2">Message from K9 Iphilia</h2>
+        <p class="text-sm italic">"Your support helps empower Latina chefs and preserve our culinary heritage. Together, we're making a difference in our community."</p>
+      </div>
+    </section>
+
+    <footer class="mt-6 text-xs text-center text-gray-400">
+      Powered by DigiChef | Latina Guapa Bundle<br/>
+      <a href="/digichef/licencia.html" class="text-blue-500">Learn about chef verification</a>
+    </footer>
+  </main>
+
+  <script>
+    // Generate affiliate links
+    const baseUrl = window.location.origin;
+    document.getElementById('sofritoLink').textContent = `${baseUrl}/sofrito`;
+    document.getElementById('recipeLink').textContent = `${baseUrl}/recipe`;
+    document.getElementById('tshirtLink').textContent = `${baseUrl}/tshirt`;
+  </script>
+</body>
+</html> 
